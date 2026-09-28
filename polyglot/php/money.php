@@ -1,0 +1,1 @@
+<?php function balance(array $t):float{$b=0;foreach($t as$x)$b+=($x['type']==='income'?$x['amount']:-$x['amount']);return$b;}
