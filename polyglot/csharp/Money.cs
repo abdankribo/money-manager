@@ -1,0 +1,1 @@
+using System.Collections.Generic;public record Transaction(double Amount,bool Income,string Category);public static class MoneyLogic{public static double Balance(IEnumerable<Transaction> t){double b=0;foreach(var x in t)b+=x.Income?x.Amount:-x.Amount;return b;}}
