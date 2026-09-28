@@ -1,0 +1,1 @@
+data class Transaction(val amount:Double,val income:Boolean,val category:String);fun balance(v:List<Transaction>)=v.sumOf{if(it.income)it.amount else -it.amount}
