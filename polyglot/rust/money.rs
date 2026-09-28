@@ -1,0 +1,1 @@
+pub struct Transaction{pub amount:f64,pub income:bool,pub category:String}pub fn balance(v:&[Transaction])->f64{v.iter().map(|t|if t.income{t.amount}else{-t.amount}).sum()}
